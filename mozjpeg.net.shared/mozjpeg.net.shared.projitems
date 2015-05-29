@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{8BA94B62-267D-46D8-BA35-A1E69B5F15C6}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>mozjpeg.net.shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)StructsJpegLib.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)StructsTransformations.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Compression.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)StructsExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transformation.cs" />
+  </ItemGroup>
+</Project>

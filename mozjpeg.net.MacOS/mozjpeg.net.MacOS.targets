@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- Nice trick from http://stackoverflow.com/questions/21143817/set-content-files-to-copy-local-always-in-a-nuget-package/30386836#30386836 -->
+  <ItemGroup Condition="'$(MSBuildThisFileDirectory)' != '' And HasTrailingSlash('$(MSBuildThisFileDirectory)')">
+    <Content Include="$(MSBuildThisFileDirectory)libmozjpeg.dylib">
+      <Link>libmozjpeg.dylib</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>

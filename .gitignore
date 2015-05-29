@@ -1,0 +1,6 @@
+mozjpeg
+*/bin/*
+*/obj/*
+packages
+mozjpeg.net.userprefs
+*.nupkg

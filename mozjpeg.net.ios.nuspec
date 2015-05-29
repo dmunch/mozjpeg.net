@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>mozjpeg.net.ios</id>
+        <version>1.0.1</version>
+        <authors>Daniel Münch</authors>
+        <licenseUrl>https://github.com/dmunch/mozjpeg.net/blob/master/COPYING</licenseUrl>
+        <projectUrl>https://github.com/dmunch/mozjpeg.net</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>P/Invoke wrappers around Mozillas mozjpeg for .NET and Xamarin</description>
+        <summary>Exposes the complete libjpeg API in order to be able to control all the parameters of JPEG encoding and decoding. Also includes
+        lossless transformation methods.</summary>
+        <tags>libjpeg mozjpeg Xamarin ios lossless transformation</tags>
+    </metadata>
+    <files>        
+        <file src="mozjpeg.net.ios/bin/Release/mozjpeg.net.dll" target="lib/Xamarin.iOS10" />
+	<file src="mozjpeg.net.ios/bin/libmozjpeg.a" target="content" />
+	<file src="mozjpeg.net.ios/mozjpeg.net.ios.targets" target="build" />
+    </files>
+</package>
