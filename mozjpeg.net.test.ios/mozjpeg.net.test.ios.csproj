@@ -141,8 +141,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="..\testimage.jpg">
+    <EmbeddedResource Include="..\testimage.jpg">
       <Link>testimage.jpg</Link>
-    </BundleResource>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
