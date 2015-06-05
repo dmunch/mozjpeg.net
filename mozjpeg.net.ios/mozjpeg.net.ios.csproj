@@ -42,7 +42,18 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Compression.cs" />
+    <Compile Include="libmozjpeg.linkwith.cs" >
+    	<DependentUpon>libmozjpeg.a</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="..\mozjpeg.net.shared\mozjpeg.net.shared.projitems" Label="Shared" Condition="Exists('..\mozjpeg.net.shared\mozjpeg.net.shared.projitems')" />
-  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
+  <ItemGroup>
+    <ObjcBindingNativeLibrary Include="bin\libmozjpeg.a">
+      <Link>libmozjpeg.a</Link>
+    </ObjcBindingNativeLibrary>
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
+  </ItemGroup>
 </Project>

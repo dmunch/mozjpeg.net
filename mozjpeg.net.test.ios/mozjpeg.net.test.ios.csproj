@@ -39,7 +39,6 @@
     <ConsolePause>false</ConsolePause>
     <MtouchLink>None</MtouchLink>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <MtouchExtraArgs>-gcc_flags "-L${ProjectDir} -lmozjpeg -force_load ${ProjectDir}/libmozjpeg.a"</MtouchExtraArgs>
     <MtouchUseRefCounting>true</MtouchUseRefCounting>
     <MtouchI18n>
     </MtouchI18n>

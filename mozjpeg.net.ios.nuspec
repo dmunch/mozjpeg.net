@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>mozjpeg.net.ios</id>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
         <authors>Daniel Münch</authors>
         <licenseUrl>https://github.com/dmunch/mozjpeg.net/blob/master/COPYING</licenseUrl>
         <projectUrl>https://github.com/dmunch/mozjpeg.net</projectUrl>
@@ -14,7 +14,5 @@
     </metadata>
     <files>        
         <file src="mozjpeg.net.ios/bin/Release/mozjpeg.net.dll" target="lib/Xamarin.iOS10" />
-	<file src="mozjpeg.net.ios/bin/libmozjpeg.a" target="content" />
-	<file src="mozjpeg.net.ios/mozjpeg.net.ios.targets" target="build" />
     </files>
 </package>
