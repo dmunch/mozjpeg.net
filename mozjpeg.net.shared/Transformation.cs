@@ -6,12 +6,17 @@ namespace mozjpeg.net
 {
 	public class Transformation
 	{
-		public static byte[] Rotate (byte[] bytes)
+        public static byte[] Rotate (byte[] bytes)
+        {
+            return Transform(bytes, StructsTransformations.JXFORM_CODE.JXFORM_ROT_90);
+        }
+
+		public static byte[] Transform (byte[] bytes, StructsTransformations.JXFORM_CODE transformationCode)
 		{
 			StructsTransformations.jpeg_transform_info transformoption;
 			transformoption = new StructsTransformations.jpeg_transform_info ();
 
-			transformoption.transform = StructsTransformations.JXFORM_CODE.JXFORM_ROT_90;
+            transformoption.transform = transformationCode;
 			transformoption.perfect = 0;
 			transformoption.trim = 0;
 			transformoption.force_grayscale = 0;

@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 
 namespace mozjpeg.net
 {
-	internal unsafe sealed partial class StructsTransformations
+	public unsafe sealed partial class StructsTransformations
 	{
 		/*
 		 * Codes for supported types of image transformations.

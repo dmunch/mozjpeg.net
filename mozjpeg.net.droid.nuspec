@@ -2,12 +2,16 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>mozjpeg.net.droid</id>
-        <version>1.0.1</version>
+        <version>1.0.3</version>
         <authors>Daniel Münch</authors>
         <licenseUrl>https://github.com/dmunch/mozjpeg.net/blob/master/COPYING</licenseUrl>
         <projectUrl>https://github.com/dmunch/mozjpeg.net</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>P/Invoke wrappers around Mozillas mozjpeg for .NET and Xamarin</description>
+        <releaseNotes>
+		 - Add method Transform with transformation parameter. 
+		 - Extend J_COLOR_SPACE enum.
+	</releaseNotes>
         <summary>Exposes the complete libjpeg API in order to be able to control all the parameters of JPEG encoding and decoding. 
             Also includes lossless transformation methods for rotation and flipping of JPEG images.</summary>
         <tags>libjpeg mozjpeg Xamarin monodroid lossless transformation</tags>
